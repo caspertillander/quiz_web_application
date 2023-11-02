@@ -1,0 +1,22 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>QuizMe - An Online Quiz Platform</h1>
+Welcome to QuizMe, a platform for creating and participating in quizzes. Here's what you can expect:
+
+<ul>
+    <li><strong>Topic Exploration:</strong> Dive into a diverse range of topics, from general knowledge to niche subjects.</li>
+    <li><strong>Quiz Creation:</strong> Contribute by adding your own questions, enriching the experience for everyone.</li>
+    <li><strong>Quiz Participation:</strong> Challenge yourself with random questions from your chosen topics.</li>
+    <li><strong>API Integration:</strong> Developers can leverage our API to fetch or validate questions, integrating QuizMe into their projects.</li>
+</ul>
+
+<h2>QuizMe currently contains...</h2>
+<ul>
+    <li><strong><%= it.topics[0].count %></strong> topics!</li>
+    <li><strong><%= it.questions[0].count %></strong> questions!</li>
+    <li><strong><%= it.answers[0].count %></strong> answers!</li>
+</ul>
+
+To get access to the full potential of this application, register or log in!
+
+<a href="/auth/register">Register</a> | <a href="/auth/login">Login</a>
